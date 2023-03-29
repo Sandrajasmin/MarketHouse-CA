@@ -1,7 +1,8 @@
 import React from 'react';
-import Logo from '../global/logo.png'
-import LogoDark from '../global/logodark.png'
-import Switcher from '../components/Switcher';
+import Logo from '../global/components/logo.png'
+import LogoDark from '../global/components/logodark.png'
+import Switcher from '../components/theme/Switcher';
+
 
 const Header = () => {
     return (

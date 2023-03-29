@@ -1,15 +1,13 @@
 import './App.css';
+import Router from './routes/Router';
 import Header from './global/header';
-// import Homepage from './pages/homepage';
-import DetailPage from './pages/detailPage';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      {/* <Homepage/> */}
-      <DetailPage/>
-    </div>
+    <>
+      <Header />
+      <Router />
+    </>
   );
 }
 
