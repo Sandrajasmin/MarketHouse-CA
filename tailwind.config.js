@@ -16,8 +16,8 @@ module.exports = {
         'beig': '#A6948A',
         'primaryblue': '#041840',
         'blue': '#020E26',
-        'green': '#1BF28E',
-        'lightgreen': '#18D97F'
+        'lightgreen': '#1BF28E',
+        'green': '#18D97F'
       }
     },
   },
