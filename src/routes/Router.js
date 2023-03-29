@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "../pages/homepage/index";
 import DetailsPage from "../pages/detailPage/index";
 // import CartCheckOutPage from "../components/views/CartCheckOutPage";
@@ -8,7 +8,7 @@ import DetailsPage from "../pages/detailPage/index";
 
 function Router() {
     return (
-        <>
+        <BrowserRouter>
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/products" element={<HomePage />} />
@@ -17,7 +17,7 @@ function Router() {
                 <Route path="/contact-us" element={<ContactUsPage />} />
                 <Route path="*" element={<PageNotFound />} /> */}
             </Routes>
-        </>
+        </BrowserRouter>
     );
 }
 
