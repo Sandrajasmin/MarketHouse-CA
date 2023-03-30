@@ -1,4 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit"
+import { setLoadingState } from "./loaderSlicer"
+import { setError } from "./errorSlice"
 
 const productsSlicer = createSlice({
     name: "products",
@@ -22,6 +24,7 @@ const { SET_PRODUCTS } = productsSlicer.actions
 const { SET_SINGLE_PRODUCT } = productsSlicer.actions
 
 export const fetchAllProducts = () => async (dispatch) => {
+    dispatch(setLoadingState(true));
     try {
         const response = await fetch('https://api.noroff.dev/api/v1/online-shop')
         const data = await response.json()
