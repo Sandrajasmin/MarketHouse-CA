@@ -4,9 +4,9 @@ import HomePage from "../pages/homepage/index";
 import AllProducts from '../components/products.js';
 import DetailsPage from "../pages/detailPage/index";
 import CartCheckOutPage from "../pages/cart/index"
-import CheckOutSuccess from '../pages/checkout/index';
 import ContactPage from "../pages/contact/index"
 import PageNotFound from "../pages/pagenotfound/index"
+import CheckOutSuccess from '../pages/checkout/index';
 
 function Router() {
     return (
