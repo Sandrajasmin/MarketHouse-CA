@@ -29,7 +29,7 @@ const Header = () => {
                                        All Products
                                     </NavLink>
                                     <span className="h-6 w-px bg-black dark:bg-green" aria-hidden="true"></span>
-                                    <NavLink to="contact-us" className="text-xs lg:text-sm font-light font-body text-black dark:text-green hover:text-gray-800">
+                                    <NavLink to="/contact-us" className="text-xs lg:text-sm font-light font-body text-black dark:text-green hover:text-gray-800">
                                         Contact Us
                                     </NavLink>
                                     

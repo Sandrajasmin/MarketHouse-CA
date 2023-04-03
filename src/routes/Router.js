@@ -4,9 +4,10 @@ import HomePage from "../pages/homepage/index";
 import AllProducts from '../components/products.js';
 import DetailsPage from "../pages/detailPage/index";
 import CartCheckOutPage from "../pages/cart/index"
-import CheckOutSuccess from '../pages/checkOut/index';
+import CheckOutSuccess from '../pages/checkout/index';
 import ContactPage from "../pages/contact/index"
-// import PageNotFound from "../components/views/PageNotFound";
+import PageNotFound from "../pages/pagenotfound/index"
+
 
 function Router() {
     return (
@@ -18,7 +19,7 @@ function Router() {
                 <Route path="/cart" element={<CartCheckOutPage />} />
                 <Route path="/checkout" element={<CheckOutSuccess />} />
                 <Route path="/contact-us" element={<ContactPage />} />
-                {/* <Route path="*" element={<PageNotFound />} />  */}
+                <Route path="*" element={<PageNotFound />} />  
             </Routes>
 
     );

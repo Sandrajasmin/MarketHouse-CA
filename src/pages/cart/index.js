@@ -48,7 +48,7 @@ const CartCheckOutPage = () => {
                                                         <div
                                                             className="flex justify-between text-black dark:text-white">
 
-                                                            <a href="/" className='font-body text-md'>
+                                                            <a href="/" className='font-body text-sm md:text-md'>
                                                                 {item.title}
                                                             </a>
 
