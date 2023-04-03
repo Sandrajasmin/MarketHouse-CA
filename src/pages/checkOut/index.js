@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const CheckOutSuccess = () => {
     return (
-        <div className='mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+        <div className='mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col align-middle'>
             <h1 className='text-black font-body'>Thank you for shopping with us! </h1>
             <p className='text-black font-body'>Your order #45863</p>
             <p className='text-black font-body'>We will email you an order confirmation with details and tracking info</p>
