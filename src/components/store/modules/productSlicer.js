@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"
 import { setLoadingState } from "./loaderSlicer"
-import { setError } from "./errorSlice"
+import { setError } from "./errorSlice";
+
 
 const productsSlicer = createSlice({
     name: "products",

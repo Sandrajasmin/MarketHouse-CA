@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchSingleProduct } from "../../components/store/modules/productSlicer";
+import { addItemToCart } from "../../components/store/modules/cartSlicer";
 import DiscountProcenteg from "../../components/discountProcent";
 
 function DetailPage() {
@@ -26,7 +27,7 @@ function DetailPage() {
                                 className="object-fit object-center rounded-md md:max-h-60 lg:max-h-44 lg:w-44 self-end"
                             />
                             {singleProduct.discountedPrice < singleProduct.price ? (
-                                <div className="w-16 h-16 rounded-full bg-red-600 top-[130px] md:left-[240px] lg:top-[190px] xl:left-[320px] xl:top-[130px] ml-3 lg:mb-3 absolute flex items-center justify-center">
+                                <div className="w-16 h-16 rounded-full bg-red-600 top-[130px] md:left-[240px] lg:top-[190px] xl:left-[350px] xl:top-[130px] ml-3 lg:mb-3 absolute flex items-center justify-center">
                                     <p className="text-white text-sm sm:text-lg">
                                         -{DiscountProcenteg(singleProduct.discountedPrice, singleProduct.price)}%
                                     </p>
@@ -96,6 +97,7 @@ function DetailPage() {
                                 )}
                                 <div className="mt-10">
                                     <button
+                                        onClick={() => dispatch(addItemToCart(singleProduct))}
                                         type="submit"
                                         className="mt-10 flex w-full items-center justify-center rounded-md bg-grey dark:bg-green py-3 px-8 text-base font-medium text-white dark:text-black hover:bg-beig hover:dark:bg-lightgreen hover:text-black"
                                     >
@@ -106,7 +108,7 @@ function DetailPage() {
                         </div>
                     </div>
                     <div className="mx-auto max-w-7xl px-4 sm:px-0">
-                        <div className="border-t border-black dark:border-green md:mx-5 md:px-10 ">
+                        <div className="border-t border-black dark:border-green md:mx-5 md:px-10 py-10 mb-10">
                             <h2 className="font-body text-xl lg:text-2xl py-5 text-black dark:text-white">Reviews</h2>
                             {singleProduct.reviews.length ? (
                                 singleProduct.reviews.map((review) => (
