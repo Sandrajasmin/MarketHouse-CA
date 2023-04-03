@@ -16,6 +16,6 @@ const CheckOutSuccess = () => {
             </div>
         </div>
     )
-}
+};
 
 export default CheckOutSuccess;

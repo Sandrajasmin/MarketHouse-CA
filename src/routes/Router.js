@@ -8,7 +8,6 @@ import CheckOutSuccess from '../pages/checkout/index';
 import ContactPage from "../pages/contact/index"
 import PageNotFound from "../pages/pagenotfound/index"
 
-
 function Router() {
     return (
 
