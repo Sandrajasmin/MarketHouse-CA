@@ -1,9 +1,11 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/homepage/index";
+import AllProducts from '../components/products.js';
 import DetailsPage from "../pages/detailPage/index";
-// import CartCheckOutPage from "../components/views/CartCheckOutPage";
-// import ContactUsPage from "../components/views/ContactUsPage";
+import CartCheckOutPage from "../pages/cart/index"
+import CheckOutSuccess from '../pages/checkOut/index';
+import ContactPage from "../pages/contact/index"
 // import PageNotFound from "../components/views/PageNotFound";
 
 function Router() {
@@ -11,11 +13,12 @@ function Router() {
 
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/products" element={<HomePage />} />
+                <Route path="/products" element={<AllProducts />} />
                 <Route path="/product/:id" element={<DetailsPage />} />
-                {/* <Route path="/cart" element={<CartCheckOutPage />} />
-                <Route path="/contact-us" element={<ContactUsPage />} />
-                <Route path="*" element={<PageNotFound />} /> */}
+                <Route path="/cart" element={<CartCheckOutPage />} />
+                <Route path="/checkout" element={<CheckOutSuccess />} />
+                <Route path="/contact-us" element={<ContactPage />} />
+                {/* <Route path="*" element={<PageNotFound />} />  */}
             </Routes>
 
     );
